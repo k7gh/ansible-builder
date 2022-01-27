@@ -1,11 +1,11 @@
 ---
 - name: Build/Push/Install Custom EEs
-  hosts: aap.gregsowell.com
+  hosts: localhost
   gather_facts: false
   vars:
     # aap username/pass
-    controller_user: "{{ gen2_user }}"
-    controller_pass: "{{ gen2_pword }}"
+    controller_user: "kedjah@DESKTOP-Q7MRC1E"
+    controller_pass: abcde
 
 #    # what is the base EE that is used for building my custom EE
 #    base_ee: registry.redhat.io/ansible-automation-platform-21/ee-supported-rhel8
@@ -14,10 +14,10 @@
     new_ee: all_ee_supported
 
     # what is the path where the EE build files are stored
-    path_ee: /root/ee
+    path_ee: /var/lib/awx/projects
 
     # private automation hub host
-    pah_host: pah.gregsowell.com
+    pah_host: localhost
 
     # credential name used in AAP
     pah_cred: Automation Hub Container Registry
@@ -26,8 +26,8 @@
 #    new_ee_ver: 1.0.2
 
     # pah username/pass
-    pah_user: "{{ gen1_user }}"
-    pah_pass: "{{ gen1_pword }}"
+    pah_user: "kedjah@DESKTOP-Q7MRC1E"
+    pah_pass: "abcde"
 
   tasks:
   - name: Grab the execution-environment.yml file to use as variables
