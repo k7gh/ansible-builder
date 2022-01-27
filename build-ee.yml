@@ -4,8 +4,8 @@
   gather_facts: false
   vars:
     # aap username/pass
-    controller_user: "kedjah@DESKTOP-Q7MRC1E"
-    controller_pass: abcde
+    controller_user: 
+    controller_pass: 
 
 #    # what is the base EE that is used for building my custom EE
 #    base_ee: registry.redhat.io/ansible-automation-platform-21/ee-supported-rhel8
@@ -26,8 +26,8 @@
 #    new_ee_ver: 1.0.2
 
     # pah username/pass
-    pah_user: "kedjah@DESKTOP-Q7MRC1E"
-    pah_pass: "abcde"
+    pah_user: 
+    pah_pass: 
 
   tasks:
   - name: Grab the execution-environment.yml file to use as variables
